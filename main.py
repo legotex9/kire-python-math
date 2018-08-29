@@ -126,6 +126,7 @@ class conversions():
                 return pt*2
             def c_floz(c):
                 return c*8
+
             def floz_c(floz):
                 return floz/8
             def c_pt(c):
@@ -137,9 +138,9 @@ class conversions():
         class metric():
             def L_mL(L):
                 return l*1000
+
             def mL_L(mL):
                 return mL/1000
-        ##class inbetween():
 
     class weight():
         class customary():
@@ -147,6 +148,7 @@ class conversions():
                 return T*2000
             def lb_oz(lb):
                 return lb*16
+
             def oz_lb(oz):
                 return oz/16
             def lb_T(lb):
@@ -156,11 +158,12 @@ class conversions():
                 return kg*1000
             def g_mg(g):
                 return g*1000
+
             def mg_g(mg):
                 return mg/1000
             def g_kg(g):
                 return g/1000
-        ##class inbetween():
+
     class length():
         class customary():
             def mi_yd(mi):
@@ -169,6 +172,7 @@ class conversions():
                 return yd*3
             def ft_in(ft):
                 return ft*12
+
             def in_ft(inches):
                 return inches/12
             def ft_yd(ft):
@@ -182,13 +186,14 @@ class conversions():
                 return m*100
             def cm_mm(cm):
                 return cm*10
+
             def mm_cm(mm):
                 return mm/10
             def cm_m(cm):
                 return cm/100
             def m_km(m):
                 return m/1000
-        ##class inbetween():
+
     class time():
         def sec_min(sec):
             return sec/60
