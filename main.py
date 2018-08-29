@@ -158,6 +158,33 @@ class conversions():
                 return mg/1000
             def g_kg(g):
                 return g/1000
+    class length():
+        class customary():
+            def mi_yd(mi):
+                return mi*1760
+            def yd_ft(yd):
+                return yd*3
+            def ft_in(ft):
+                return ft*12
+            def in_ft(inches):
+                return inches/12
+            def ft_yd(ft):
+                return ft/3
+            def yd_mi(yd):
+                return yd/1760
+        class metric():
+            def km_m(km):
+                return km*1000
+            def m_cm(m):
+                return m*100
+            def cm_mm(cm):
+                return cm*10
+            def mm_cm(mm):
+                return mm/10
+            def cm_m(cm):
+                return cm/100
+            def m_km(m):
+                return m/1000
 class other():
     def pythag(a,b):
         a2 = a**2
