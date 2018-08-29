@@ -237,6 +237,18 @@ class other():
         a2b2 = a2+b2
         final = sqrt(a2b2)
         return final
+    def slope(x1, y1, x2, y2):
+        return (y2-y1)/(x2-x1)
+    def slope_intercept(m, x, b):
+        return m*x+b
+    def quadratic_equ_plus (a, b, c):
+        b1 = b
+        b2 = b*-1
+        return (b2+sqrt(sqrd(b)-4*a*c))/2*a
+    def quadratic_equ_minus (a, b, c):
+        b1 = b
+        b2 = b*-1
+        return (b2-sqrt(sqrd(b)-4*a*c))/2*a
 class money():
     class intrest():
         def simple(principle, rate_as_decimal, time_in_years):
