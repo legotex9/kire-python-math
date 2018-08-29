@@ -139,6 +139,25 @@ class conversions():
                 return l*1000
             def mL_L(mL):
                 return mL/1000
+    class weight():
+        class customary():
+            def T_lb(T):
+                return T*2000
+            def lb_oz(lb):
+                return lb*16
+            def oz_lb(oz):
+                return oz/16
+            def lb_T(lb):
+                return lb/2000
+        class metric():
+            def kg_g(kg):
+                return kg*1000
+            def g_mg(g):
+                return g*1000
+            def mg_g(mg):
+                return mg/1000
+            def g_kg(g):
+                return g/1000
 class other():
     def pythag(a,b):
         a2 = a**2
