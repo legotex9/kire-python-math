@@ -115,9 +115,37 @@ class geometry():
             def diameter(self, diameter, height):
                 v = geometry.volume.cylinder.radius(diameter/2,height)
                 return v
-class angles():
-
+class conversions():
+    class volume():
+        class customary():
+            def gal_qt(gal):
+                return gal*4
+            def qt_pt(qt):
+                return qt*2
+            def pt_c(pt):
+                return pt*2
+            def c_floz(c):
+                return c*8
+            def floz_c(floz):
+                return floz/8
+            def c_pt(c):
+                return c/2
+            def pt_qt(pt):
+                return pt/2
+            def qt_gal(qt):
+                return qt/4
+        class metric():
+            def L_mL(L):
+                return l*1000
+            def mL_L(mL):
+                return mL/1000
 class other():
+    def pythag(a,b):
+        a2 = a**2
+        b2 = b**2
+        a2b2 = a2+b2
+        final = sqrt(a2b2)
+        return final
 
 class money():
     class intrest():
@@ -125,8 +153,8 @@ class money():
             p = float(principle)
             r = float(rate_as_decimal)
             t = float(time_in_years)
-            i = float(p*r*t)
-            reutn i
+            I = float(p*r*t)
+            return I
         def comound(principle, rate_as_deciamal, time):
             p = float(principle)
             r = float(rate_as_decimal)
