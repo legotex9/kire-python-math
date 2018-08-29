@@ -139,6 +139,8 @@ class conversions():
                 return l*1000
             def mL_L(mL):
                 return mL/1000
+        ##class inbetween():
+
     class weight():
         class customary():
             def T_lb(T):
@@ -158,6 +160,7 @@ class conversions():
                 return mg/1000
             def g_kg(g):
                 return g/1000
+        ##class inbetween():
     class length():
         class customary():
             def mi_yd(mi):
@@ -185,6 +188,22 @@ class conversions():
                 return cm/100
             def m_km(m):
                 return m/1000
+        ##class inbetween():
+    #class time():
+    class tempeture():
+        def C_F(c):
+            return c*1.8+32
+        def F_C(f):
+            return (f-32)/1.8
+        def C_K(c):
+            return c+273.15
+        def F_K(f):
+            return (conversions.tempeture.C_K(conversions.tempeture.F_C))
+        def K_C(k):
+            return K-273.15
+        def K_F(k):
+            C = conversions.tempeture.K_C(k)
+            return conversions.tempeture.C_F(C)
 class other():
     def pythag(a,b):
         a2 = a**2
