@@ -189,7 +189,28 @@ class conversions():
             def m_km(m):
                 return m/1000
         ##class inbetween():
-    #class time():
+    class time():
+        def sec_min(sec):
+            return sec/60
+        def min_hr(min):
+            return min/60
+        def hr_day(hr):
+            return hr/24
+        def day_week(day):
+            return day/7
+        def day_year(day):
+            return day/365
+
+        def year_day(yr):
+            return yr*365
+        def week_day(wk):
+            return wk*7
+        def day_hr(day):
+            return day*24
+        def hr_min(hr):
+            return hr*60
+        def min_sec(min):
+            return min*60
     class tempeture():
         def C_F(c):
             return c*1.8+32
@@ -211,7 +232,6 @@ class other():
         a2b2 = a2+b2
         final = sqrt(a2b2)
         return final
-
 class money():
     class intrest():
         def simple(principle, rate_as_decimal, time_in_years):
